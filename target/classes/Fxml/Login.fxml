@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Styles/login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankmanagement.Controllers.LoginController">
+   <children>
+      <VBox layoutX="-1.0" prefHeight="400.0" prefWidth="200.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FontAwesomeIconView glyphName="BANK" size="30" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BANKA">
+               <font>
+                  <Font size="25.0" />
+               </font></Text>
+         </children>
+      </VBox>
+      <VBox layoutX="320.0" layoutY="73.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container"
+            AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <Label text="Hesap Türünü Seçiniz"/>
+         <ChoiceBox fx:id="acc_selector" prefWidth="100.0" styleClass="account_selector"/>
+         <Label fx:id="payee_address_lbl" text="Alacaklı Adresi"/>
+         <TextField fx:id="payee_address_fld" styleClass="input_field"/>
+         <Label text="Şifre"/>
+         <TextField fx:id="password_fld" styleClass="input_field"/>
+         <Button fx:id="login_btn" mnemonicParsing="false" prefHeight="32.0" prefWidth="353.0" text="Giriş"/>
+         <Label fx:id="error_lbl" styleClass="error_lbl"/>
+      </VBox>
+   </children>
+</AnchorPane>
